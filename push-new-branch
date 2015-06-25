@@ -5,7 +5,7 @@ NEWFILE=incompatible$NUMBER.css
 
 git checkout master
 git checkout -b add-$NEWFILE
-cp transition.css $NEWFILE
+cp incompatible.css $NEWFILE
 git add $NEWFILE
 git commit -m "Add $NEWFILE"
 git push origin
