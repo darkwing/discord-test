@@ -1,0 +1,11 @@
+#!/bin/bash
+
+NUMBER=$1
+NEWFILE=transition$NUMBER.css
+
+git checkout master
+git checkout -b add-$NEWFILE
+cp transition.css $NEWFILE
+git add $NEWFILE
+git commit -m "Add $NEWFILE"
+git push origin
